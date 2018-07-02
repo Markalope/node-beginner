@@ -1,8 +1,8 @@
 var server = require("./server.js");
 var router = require("./router");
-const requestHandlers = require("./requestHandlers");
+var requestHandlers = require("./requestHandlers");
 
-const handle = {};
+var handle = {};
 handle["/"] = requestHandlers.start;
 handle["/start"] = requestHandlers.start;
 handle["/upload"] = requestHandlers.upload;
