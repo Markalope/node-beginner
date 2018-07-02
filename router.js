@@ -4,6 +4,7 @@ function route(pathname) {
         handle[pathname]();
     } else {
         console.log("No request handler found for " + pathname);
+        return "404 not found";
     }
 }
 

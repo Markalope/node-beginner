@@ -17,10 +17,5 @@ function  start(route, handle) {
 
 http.createServer(onRequest).listen(8888);
 console.log("Server has started.");
-}
-function upload() {
-    console.log("Request handler 'upload' was called.")
-}
 
-exports.start = start;
-exports.upload = upload;
+}
